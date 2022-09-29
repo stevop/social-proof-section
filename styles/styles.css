@@ -67,8 +67,15 @@ blockquote p {
   blockquote {
     max-width: 375px;
   }
+  blockquote:first-of-type {
+    transform: translateY(-1.5rem);
+  }
+  blockquote:last-of-type {
+    transform: translateY(1.5rem);
+  }
   .blockquotes {
     max-width: 1200px;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
