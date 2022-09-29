@@ -9,17 +9,27 @@
 }
 
 body {
+  background-image: url(../images/bg-pattern-top-mobile.svg);
+  background-size: 33%;
+  background-position: top left;
+  background-repeat: no-repeat;
   font-size: 1.15rem;
   font-family: "League Spartan", sans-serif;
 }
 
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .attribution {
-  font-size: 11px;
+  font-size: 0.8rem;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: var(--very-dark-magenta);
+  cursor: pointer;
 }
 
 blockquote {
@@ -80,7 +90,7 @@ li::before {
   background-repeat: space;
 }
 
-body > h1 {
+.container > h1 {
   color: var(--very-dark-magenta);
   font-size: 3rem;
   line-height: 0.8;
@@ -88,7 +98,7 @@ body > h1 {
   text-align: center;
 }
 
-body > p {
+.container > p {
   color: var(--very-dark-magenta);
   margin-top: 0.5rem;
   text-align: center;

@@ -14,15 +14,28 @@
 
 body{
     // font-size: 0,9375rem;
+    background-image: 
+        url(../images/bg-pattern-top-mobile.svg); 
+        // , url(../images/bg-pattern-bottom-mobile.svg)
+    background-size: 33%; //25%
+    background-position: top left; // , bottom, right
+    background-repeat: no-repeat;
     font-size: 1.15rem;
     font-family: "League Spartan", sans-serif;
+
+}
+
+.container{
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: .8rem;
     text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--very-dark-magenta);
+    cursor: pointer;
  }
 
