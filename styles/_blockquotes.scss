@@ -2,7 +2,7 @@ blockquote{
     background-color: var(--very-dark-magenta);
     border-radius: .5rem;
     margin-bottom: var(--spacer);
-    padding: 1rem;
+    padding: 1.25rem;
     max-width: 500px;
     min-width: 320px;
     margin-right: auto;
@@ -41,7 +41,7 @@ blockquote{
     }
 
     .blockquotes{
-        max-width: 1200px;
+        max-width: 1440px;
         margin-top: 3rem;
         margin-left: auto;
         margin-right: auto;
@@ -50,4 +50,20 @@ blockquote{
         justify-content: center;
         gap: 1.8rem;
     }
+}
+
+@media only screen and (min-width: 1440px){
+    blockquote{
+        font-size: 1.5rem;
+        max-width: 950px;
+        img{
+            margin-top: 1rem;
+            width: 4rem;
+        }
+        .buyer{
+            margin-top: 8%;
+            margin-left: -60%;
+        }
+    }
+    
 }

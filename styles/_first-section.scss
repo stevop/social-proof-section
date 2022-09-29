@@ -15,7 +15,7 @@
 
 @media only screen and (min-width: 1440px){
     .first-section{
-        max-width: 650px;
+        max-width: 500px;
         padding-right: 5rem;
 
         display: flex;
@@ -23,14 +23,16 @@
         justify-content: flex-start;
         h1{
             text-align: left;
+            font-size: 4.3rem;
         }
         p{
             text-align: left;
+            font-size: 1.5rem;
         }
     }
 
     .flexbox--first-section{
-        max-width: 1200px;
+        max-width: 1400px;
         margin-right: auto;
         margin-left: auto;
 
