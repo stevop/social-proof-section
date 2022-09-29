@@ -1,13 +1,19 @@
 blockquote{
     background-color: var(--very-dark-magenta);
     border-radius: .5rem;
+    box-shadow: 0 5px 10px dimgray;
     margin-bottom: var(--spacer);
     padding: 1.25rem;
     max-width: 500px;
     min-width: 320px;
     margin-right: auto;
     margin-left: auto;
-
+    &:focus, &:hover{
+        cursor: pointer;
+        .buyer p:last-of-type{
+            color: var(--soft-pink);
+        }
+    }
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -16,6 +22,7 @@ blockquote{
         margin-left: -75%; //Nastavit vzdialenost od img, mozno ani netreba uz
         p:last-of-type{
             color: var(--dark-grayish-magenta);
+            transition: color .5s ease-in-out;
         }
     }
     img{

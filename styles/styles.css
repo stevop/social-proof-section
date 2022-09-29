@@ -36,6 +36,7 @@ body {
 blockquote {
   background-color: var(--very-dark-magenta);
   border-radius: 0.5rem;
+  box-shadow: 0 5px 10px dimgray;
   margin-bottom: var(--spacer);
   padding: 1.25rem;
   max-width: 500px;
@@ -46,12 +47,19 @@ blockquote {
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
+blockquote:focus, blockquote:hover {
+  cursor: pointer;
+}
+blockquote:focus .buyer p:last-of-type, blockquote:hover .buyer p:last-of-type {
+  color: var(--soft-pink);
+}
 blockquote section {
   color: white;
   margin-left: -75%;
 }
 blockquote section p:last-of-type {
   color: var(--dark-grayish-magenta);
+  transition: color 0.5s ease-in-out;
 }
 blockquote img {
   border-radius: 50%;
@@ -105,6 +113,7 @@ blockquote p {
 .ratings li {
   background-color: var(--light-grayish-magenta);
   border-radius: 0.5rem;
+  box-shadow: 0 0.125px 10px dimgray;
   color: var(--very-dark-magenta);
   font-weight: 700;
   margin-bottom: var(--spacer);
