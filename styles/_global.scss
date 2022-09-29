@@ -36,5 +36,9 @@ body{
 .attribution a {
     color: var(--very-dark-magenta);
     cursor: pointer;
+    transition: .5s color ease-in-out;
+    &:focus, &:hover{
+        color: var(--soft-pink);
+    }
  }
 
