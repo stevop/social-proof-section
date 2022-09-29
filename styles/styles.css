@@ -130,6 +130,19 @@ blockquote p {
     font-size: 1.5rem;
     max-width: 750px;
   }
+  .ratings li:first-of-type {
+    transform: translateX(-5rem);
+  }
+  .ratings li:last-of-type {
+    transform: translateX(5rem);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .ratings li {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
