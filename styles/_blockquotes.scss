@@ -12,6 +12,7 @@ blockquote{
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     section{
+        color: white;
         margin-left: -75%; //Nastavit vzdialenost od img, mozno ani netreba uz
         p:last-of-type{
             color: var(--dark-grayish-magenta);
@@ -25,5 +26,21 @@ blockquote{
         color: var(--white);
         font-weight: 500;
         grid-column: 1 / -1;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    blockquote{
+       max-width: 375px;
+    }
+
+    .blockquotes{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.8rem;
     }
 }

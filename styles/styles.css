@@ -15,6 +15,7 @@ body {
   background-repeat: no-repeat;
   font-size: 1.15rem;
   font-family: "League Spartan", sans-serif;
+  padding-top: 5rem;
 }
 
 .container {
@@ -46,6 +47,7 @@ blockquote {
   gap: 1.5rem;
 }
 blockquote section {
+  color: white;
   margin-left: -75%;
 }
 blockquote section p:last-of-type {
@@ -61,6 +63,20 @@ blockquote p {
   grid-column: 1/-1;
 }
 
+@media only screen and (min-width: 1024px) {
+  blockquote {
+    max-width: 375px;
+  }
+  .blockquotes {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.8rem;
+  }
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -90,7 +106,7 @@ li::before {
   background-repeat: space;
 }
 
-.container > h1 {
+.first-section > h1 {
   color: var(--very-dark-magenta);
   font-size: 3rem;
   line-height: 0.8;
@@ -98,9 +114,34 @@ li::before {
   text-align: center;
 }
 
-.container > p {
+.first-section > p {
   color: var(--very-dark-magenta);
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 1440px) {
+  .first-section {
+    max-width: 650px;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .first-section h1 {
+    text-align: left;
+  }
+  .first-section p {
+    text-align: left;
+  }
+  .flexbox--first-section {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=styles.css.map */
