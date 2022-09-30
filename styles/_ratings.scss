@@ -4,7 +4,7 @@
     li{
         background-color: var(--light-grayish-magenta);
         border-radius: .5rem;
-        box-shadow: 0 .125px 10px dimgray;
+        // box-shadow: 0 .25px 2px dimgray;
         color: var(--very-dark-magenta);
         font-weight: 700;
         margin-bottom: var(--spacer);
@@ -51,6 +51,15 @@
         min-width: 600px;
         transform: translateX(-3.4rem);
     }
+    .ratings li::before {
+        margin: 0;
+    }
+    li{
+        justify-content: center;
+        align-items: baseline;
+        gap: 2rem;
+    }
+   
 }
 
 

@@ -40,7 +40,6 @@ body {
 blockquote {
   background-color: var(--very-dark-magenta);
   border-radius: 0.5rem;
-  box-shadow: 0 7px 12px dimgray;
   margin-bottom: var(--spacer);
   padding: 1.25rem;
   max-width: 500px;
@@ -117,7 +116,6 @@ blockquote p {
 .ratings li {
   background-color: var(--light-grayish-magenta);
   border-radius: 0.5rem;
-  box-shadow: 0 0.125px 10px dimgray;
   color: var(--very-dark-magenta);
   font-weight: 700;
   margin-bottom: var(--spacer);
@@ -162,6 +160,14 @@ blockquote p {
   ul.ratings {
     min-width: 600px;
     transform: translateX(-3.4rem);
+  }
+  .ratings li::before {
+    margin: 0;
+  }
+  li {
+    justify-content: center;
+    align-items: baseline;
+    gap: 2rem;
   }
 }
 .first-section h1 {
